@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v3.2.0
+* @link https://coreui.io
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Free Bootstrap Admin Template</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics-->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    // Shared ID
+    gtag('config', 'UA-118965717-3');
+    // Bootstrap ID
+    gtag('config', 'UA-118965717-5');
+
+    const hide = i => {
+      let divida = document.getElementById("divida" + i);
+      let detail = document.getElementById("divida" + i + "-detail");
+      let display = window.getComputedStyle(detail, null).display;
+      if (display == 'none') {
+        detail.style.display = "block";
+        divida.style = "margin-bottom: 0.3rem; border-radius: 15px 15px 0px 0px;";
+      } else {
+        detail.style.display = "none";
+        divida.style = "margin-bottom: 1.5rem; border-radius: 15px 15px 15px 15px;";
+      }
+    }
+  </script>
+  <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+  <link href="node_modules/@coreui/icons/css/free.min.css" rel="stylesheet">
+</head>
+
+<body class="c-app">
+  <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+    <div class="c-sidebar-brand d-lg-down-none">
+      <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+        <use xlink:href="assets/brand/coreui.svg#full"></use>
+      </svg>
+      <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
+        <use xlink:href="assets/brand/coreui.svg#signet"></use>
+      </svg>
+    </div>
+    <ul class="c-sidebar-nav">
+      <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
+          <i class="c-icon cil-home"></i>&nbsp;&nbsp;&nbsp;Início<span class="badge badge-info">Novidade</span></a></li>
+      <li class="c-sidebar-nav-title">Ações</li>
+      <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="colors.html">
+          <i class="c-icon cil-copy"></i>&nbsp;&nbsp;&nbsp;Adicionar imóvel</a></li>
+    </ul>
+  </div>
+  <div class="c-wrapper c-fixed-components">
+    <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+      <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar"
+        data-class="c-sidebar-show">
+        <!-- <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-left"></use>
+          </svg> -->
+        <i class="c-icon c-icon-lg cil-arrow-left"></i>
+      </button>
+      <div class="text-value-lg mt-2">aval<strong>IA</strong></div>
+      <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
+        data-class="c-sidebar-lg-show" responsive="true">
+        <!-- <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-arrow-left"></use>
+          </svg> -->
+        <i class="c-icon c-icon-lg cil-arrow-left"></i>
+      </button>
+      <ul class="c-header-nav ml-auto mr-4">
+        <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#"
+            role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/9.jpg" alt="user@email.com"></div>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <div class="c-body">
+      <main class="c-main pt-0" style="background-color: #fff;">
+        <div class="container-fluid px-0">
+          <div class="fade-in">
+            <img src="https://resizedimgs.zapimoveis.com.br/crop/420x236/vr.images.sp/e49f58a484fe342a37c971224f2c36fe.jpg">
+            <div class="row">
+              <div class="col-12 mx-3 my-3">
+                <!-- <div class="text-value-lg">R$ 650.000,00</div> -->
+                <div class="text-value-lg">Edifício Plaza Mayor</div>
+                <small class="text-muted">Rua Vilebaldo Aguiar, 2694 - Cocó, Fortaleza - CE</small>
+              </div>
+            </div>
+            <div class="row mx-3 my-3">
+              <div class="col-6" style="height: 40px;">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 24px; width: 24px;">
+                    <g fill-rule="nonzero" fill="none">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path d="M2 2h20v20H2z"></path>
+                      <path
+                        d="M5 18V6a1 1 0 00-2 0v13a2 2 0 002 2h13a1 1 0 000-2H6a1 1 0 01-1-1zM19.25 3c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0119.25 17H8.75A1.75 1.75 0 017 15.25V4.75C7 3.784 7.784 3 8.75 3zM18 5h-8a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V6a1 1 0 00-1-1z"
+                        fill="currentColor"></path>
+                    </g>
+                  </svg>
+                  122 m²
+                </span>
+              </div>
+              <div class="col-6" style="height: 40px;">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 24px; width: 24px;">
+                    <path fill="currentColor"
+                      d="M21 14H3v-1c0-.801.312-1.555.879-2.121A2.978 2.978 0 016 10h12c.801 0 1.555.312 2.121.879.567.566.879 1.32.879 2.121v1zm0 3H3v-1h18v1zM5 8V6c0-.551.449-1 1-1h4c.551 0 1 .449 1 1v2H5zm8-2c0-.551.449-1 1-1h4c.551 0 1 .449 1 1v2h-6V6zm8 3V6a3 3 0 00-3-3h-4c-.768 0-1.47.29-2 .764A2.993 2.993 0 0010 3H6a3 3 0 00-3 3v3a4.992 4.992 0 00-2 4v6a2 2 0 002 2h1v-2h16v2h1a2 2 0 002-2v-6a4.992 4.992 0 00-2-4z">
+                    </path>
+                  </svg>
+                  3 quartos
+                </span>
+              </div>
+              <div class="col-6" style="height: 40px;">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 24px; width: 24px;">
+                    <g fill-rule="nonzero" fill="none">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path d="M2 2h20v20H2z"></path>
+                      <path
+                        d="M15.843 2a3 3 0 012.935 2.38l.778 3.671A3 3 0 0122 11v9a2 2 0 01-2 2h-1a1 1 0 01-1-1v-2H6v2a1 1 0 01-1 1H4a2 2 0 01-2-2v-9a3 3 0 012.444-2.949l.778-3.672A3 3 0 018.157 2zM19 10H5a1 1 0 00-1 1v6h16v-6a1 1 0 00-1-1zm-2.5 2a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-9 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm8.343-8H8.157l-.117.007a1 1 0 00-.862.786L6.5 8h11l-.678-3.207-.031-.113a1 1 0 00-.948-.68z"
+                        fill="currentColor"></path>
+                    </g>
+                  </svg>
+                  2 vagas
+                </span>
+              </div>
+              <div class="col-6" style="height: 40px;">
+                <span>
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="height: 24px; width: 24px;">
+                    <g fill-rule="nonzero" fill="none">
+                      <path d="M0 0h24v24H0z"></path>
+                      <path d="M2 2h20v20H2z"></path>
+                      <path
+                        d="M10.912 16h.125a.963.963 0 00.963-.963V13h-2v2.088c0 .504.408.912.912.912zm4 3h.125a.963.963 0 00.963-.963V13h-2v5.088c0 .504.408.912.912.912zm4-3h.125a.963.963 0 00.963-.963V13h-2v2.088c0 .504.408.912.912.912zM21 11H9V9a2 2 0 012-2h3V4H5v17a1 1 0 11-2 0V4a2 2 0 012-2h9a2 2 0 012 2v3h3a2 2 0 012 2v2z"
+                        fill="currentColor"></path>
+                    </g>
+                  </svg>
+                  4 banheiros
+                </span>
+              </div>
+              <div class="col-6" style="height: 40px;">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 24px; width: 24px;">
+                    <path fill="currentColor"
+                      d="M21 14H3v-1c0-.801.312-1.555.879-2.121A2.978 2.978 0 016 10h12c.801 0 1.555.312 2.121.879.567.566.879 1.32.879 2.121v1zm0 3H3v-1h18v1zM5 8V6c0-.551.449-1 1-1h4c.551 0 1 .449 1 1v2H5zm8-2c0-.551.449-1 1-1h4c.551 0 1 .449 1 1v2h-6V6zm8 3V6a3 3 0 00-3-3h-4c-.768 0-1.47.29-2 .764A2.993 2.993 0 0010 3H6a3 3 0 00-3 3v3a4.992 4.992 0 00-2 4v6a2 2 0 002 2h1v-2h16v2h1a2 2 0 002-2v-6a4.992 4.992 0 00-2-4z">
+                    </path>
+                  </svg>
+                  3 suites
+                </span>
+              </div>
+            </div>
+            <hr />
+            <div class="row mx-3 my-3">
+              <div class="col-6">
+                <div>Valor</div>
+                <div>Condomínio</div>
+                <div>IPTU</div>
+              </div>
+              <div class="col-6">
+                <div><strong>R$ 650.000</strong></div>
+                <div><strong>R$ 1.080</strong></div>
+                <div><strong>R$ 2.550</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- CoreUI and necessary plugins-->
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+  <!--[if IE]><!-->
+  <script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
+  <!--<![endif]-->
+  <!-- Plugins and scripts required by this view-->
+  <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js"></script>
+  <script src="node_modules/@coreui/utils/dist/coreui-utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

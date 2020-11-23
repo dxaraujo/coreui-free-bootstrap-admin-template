@@ -81,9 +81,7 @@
           <i class="c-icon cil-home"></i>&nbsp;&nbsp;&nbsp;Início<span class="badge badge-info">Novidade</span></a></li>
         <li class="c-sidebar-nav-title">Ações</li>
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="colors.html">
-            <i class="c-icon cil-copy"></i>&nbsp;&nbsp;&nbsp;Acompanhar acordos</a></li>
-        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="typography.html">
-            <i class="c-icon cil-barcode"></i>&nbsp;&nbsp;&nbsp;Regularizar dívida</a></li>
+            <i class="c-icon cil-copy"></i>&nbsp;&nbsp;&nbsp;Adicionar imóvel</a></li>
       </ul>
     </div>
     <div class="c-wrapper c-fixed-components">
@@ -94,7 +92,7 @@
           </svg> -->
           <i class="c-icon c-icon-lg cil-menu"></i>
         </button>
-        <div class="text-value-lg mt-2">RDCC-i</div>
+        <div class="text-value-lg mt-2">aval<strong>IA</strong></div>
         <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <!-- <svg class="c-icon c-icon-lg">
             <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
@@ -103,7 +101,7 @@
         </button>
         <ul class="c-header-nav ml-auto mr-4">
           <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/9.jpg" alt="user@email.com"></div>
+            <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/9.jpg" alt="user@email.com"></div>
             </a>
           </li>
         </ul>
@@ -112,136 +110,28 @@
         <main class="c-main">
           <div class="container-fluid">
             <div class="fade-in">
-              <div class="text-value-lg m-3">Novas dívidas</div>
+              <button class="btn btn-block btn-info" type="button"><span class="cil-plus btn-icon mr-2"></span>Adicionar novo imovél</button>
+              <div class="text-value-lg m-3">Meus imóveis</div>
               <div class="row">
                 <div class="col-sm-6 col-lg-3">
                   <div id="divida2" class="card" style="border-radius: 15px 15px 15px 15px;">
+                    <img src="https://resizedimgs.zapimoveis.com.br/crop/420x236/vr.images.sp/e49f58a484fe342a37c971224f2c36fe.jpg" class="card-img-top">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-10">
-                          <div class="text-value-lg">R$ 12.826,68</div><span class="badge badge-info">Em aberto</span>
+                          <div class="text-value-lg">R$ 650.000,00</div>
                         </div>
                         <div class="col-2" onclick="hide(2)">
                           <i class="c-icon c-icon-lg mt-1 cil-magnifying-glass"></i>
                         </div>
                       </div>
-                      <div>ALCATRAZES TRANSPORTES LTDA</div>
-                      <small class="text-muted">ALCATRAZES</small>
+                      <div>Rua Vilebaldo Aguiar, 2694 - Cocó, Fortaleza - CE</div>
+                      <small class="text-muted">Edifício Plaza Mayor</small>
                       <br>
-                      <br>
-                      <button class="btn btn-block btn-info" type="button">Regularize</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- /.row-->
-              <div id="divida2-detail" class="row" style="display: none;">
-                <div class="col-md-12">
-                  <div class="card" style="border-radius: 0px 0px 15px 15px;">
-                    <div class="card-header">CNPJ: 59.309.260/0001-96</div>
-                    <div class="card-body" style="padding: 0px;">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="row">
-                            <div class="col-12">
-                              <table class="table table-responsive-sm">
-                          <thead>
-                            <tr>
-                              <th>Categoria</th>
-                              <th>Valor</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>DEMAIS DÉBITOS TRIBUTÁRIOS</td>
-                              <td>R$ 10.317,46</td>
-                            </tr>
-                            <tr>
-                              <td>DÍVIDA PREVIDENCIÁRIA</td>
-                              <td>R$ 2.509,22</td>
-                            </tr>
-                          </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.row-->
-              <div class="text-value-lg m-3">Acompanhar acordos</div>
-              <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                  <div id="divida1" class="card" style="border-radius: 15px 15px 15px 15px;">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-10">
-                          <div class="text-value-lg">R$ 7.081,96</div><span class="badge badge-success">Em andamento</span>
-                        </div>
-                        <div class="col-2" onclick="hide(1)">
-                          <i class="c-icon c-icon-lg mt-1 cil-magnifying-glass"></i>
-                        </div>
-                      </div>
-                      <div>VIACAO AEREA SAO PAULO S A</div>
-                      <small class="text-muted">VASP</small>
-                      <br>
-                      <br>
-                      <button class="btn btn-block btn-info" type="button">Acompanhar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.row-->
-              <div id="divida1-detail" class="row" style="display: none;">
-                <div class="col-md-12">
-                  <div class="card" style="border-radius: 0px 0px 15px 15px;">
-                    <div class="card-header">CNPJ: 60.703.923/0001-31</div>
-                    <div class="card-body" style="padding: 0px;">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="row">
-                            <div class="col-12">
-                              <table class="table table-responsive-sm">
-                          <thead>
-                            <tr>
-                              <th>Categoria</th>
-                              <th>Valor</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>DEMAIS DÉBITOS TRIBUTÁRIOS</td>
-                              <td>R$ 3.500,80</td>
-                            </tr>
-                            <tr>
-                              <td>DÍVIDA PREVIDENCIÁRIA</td>
-                              <td>R$ 1.841,41</td>
-                            </tr>
-                            <tr>
-                              <td>MULTA TRABALHISTA</td>
-                              <td>R$ 23,51</td>
-                            </tr>
-                            <tr>
-                              <td>DEMAIS DÉBITOS NÃO TRIBUTÁRIOS</td>
-                              <td>R$ 1.553,79</td>
-                            </tr>
-                            <tr>
-                              <td>FGTS</td>
-                              <td>R$ 162,45</td>
-                            </tr>
-                          </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.row-->
             </div>
           </div>
         </main>
